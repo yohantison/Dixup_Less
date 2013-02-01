@@ -1,3 +1,46 @@
+/*
+    @author : Yohan Tison
+    @agency : Dixup | Agence de communication interactive
+*/
+/*-----------ROUNDED CORNER--------------*/
+/*
+    Exemple : 
+                .sbr(20px);
+*/
+/*
+    Exemple :
+                .cbr(20px,20px,0px,0px);
+*/
+/*-----------Box Shadox--------------*/
+/*
+    Exemple : 
+                .bs(20px,20px,6px,0,0,0,0.3);
+*/
+/*-----------Gradient--------------*/
+/*
+    Exemple : 
+                .lg(left, #663333, #333333);
+*/
+/*-----------Gradient--------------*/
+/*
+    Exemple : 
+               background-color:#EFEFEF;
+               .qg(top,0.2);
+*/
+/*-----------Reflection--------------*/
+/*
+    Exemple : 
+               .reflect(20%, 0.2);
+*/
+/*-----------color--------------*/
+/*
+    Exemple : 
+                .one   {color: @base;}
+                .two   {color: @complement1;}
+                .three {color: @complement2;}
+                .four  {color: @lighten1;}
+                .five  {color: @lighten2;}
+*/
 html,
 body {
   width: 100%;
@@ -17,11 +60,7 @@ section.button {
   height: 5%;
   display: block;
   margin: 0 auto;
-  background-color: #a5a5a5;
   vertical-align: center;
-  -webkit-border-radius: 30px 5px 10px 0px;
-  -moz-border-radius: 30px 5px 10px 0px;
-  -o-border-radius: 30px 5px 10px 0px;
-  -ms-border-radius: 30px 5px 10px 0px;
-  border-radius: 30px 5px 10px 0px;
+  background-color: #00ffff;
+  color: #99001a;
 }
