@@ -41,15 +41,25 @@
     Exemple : 
                 .bs(20px,20px,6px,0,0,0,0.3);
 */
-.bs (@x:5px,@y:5px,@blur:5px,@r:0,@v:0,@b:0,@alpha:0.5){
-    -o-box-shadow: @x @y @blur rgba(@r,@v,@b,@alpha);
-    -moz-box-shadow: @x @y @blur rgba(@r,@v,@b,@alpha);
-    -webkit-box-shadow: @x @y @blur rgba(@r,@v,@b,@alpha);
-    -ms-box-shadow: @x @y @blur rgba(@r,@v,@b,@alpha);
-    -khtml-box-shadow: @x @y @blur rgba(@r,@v,@b,@alpha);
-    box-shadow: @x @y @blur rgba(@r,@v,@b,@alpha);
-
+.bs (@x:5px,@y:5px,@blur:5px,@spread:5px,@r:0,@v:0,@b:0,@alpha:0.5,@inset)when (@inset=0){
     
+        -o-box-shadow: @x @y @blur @spread rgba(@r,@v,@b,@alpha);
+        -moz-box-shadow: @x @y @blur @spread rgba(@r,@v,@b,@alpha);
+        -webkit-box-shadow: @x @y @blur @spread rgba(@r,@v,@b,@alpha);
+        -ms-box-shadow: @x @y @blur @spread rgba(@r,@v,@b,@alpha);
+        -khtml-box-shadow: @x @y @blur @spread rgba(@r,@v,@b,@alpha);
+        box-shadow: @x @y @blur @spread rgba(@r,@v,@b,@alpha);  
+   
+}
+.bs (@x:5px,@y:5px,@blur:5px,@spread:5px,@r:0,@v:0,@b:0,@alpha:0.5,@inset)when (@inset=1){
+    
+        -o-box-shadow: @x @y @blur @spread rgba(@r,@v,@b,@alpha) inset;
+        -moz-box-shadow: @x @y @blur @spread rgba(@r,@v,@b,@alpha) inset;
+        -webkit-box-shadow: @x @y @blur @spread rgba(@r,@v,@b,@alpha) inset;
+        -ms-box-shadow: @x @y @blur @spread rgba(@r,@v,@b,@alpha) inset;
+        -khtml-box-shadow: @x @y @blur @spread rgba(@r,@v,@b,@alpha) inset;
+        box-shadow: @x @y @blur @spread rgba(@r,@v,@b,@alpha) inset;  
+   
 }
 
 /*-----------Gradient--------------*/
