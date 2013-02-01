@@ -1,0 +1,41 @@
+@import 'library/include_property'; //Permet d'inclure les librairie Less
+@bgcolor : #e1e1e1;
+@center : 0 auto;
+@totalWidth:100%;
+@totalHeight:100%;
+@color: #a5a5a5;
+@contentWidth: @totalWidth - 20;
+.text(@color:#454545){
+	color:@color;
+}
+
+
+html,body{
+	width:@totalWidth;
+	height:@totalHeight;
+}
+body{
+	background-color: @bgcolor;
+	.text;
+	
+}
+.contentWrapper{
+	width:@contentWidth;
+	height:@totalHeight;
+	margin:@center;
+}
+
+section.button{
+	width:80%;
+	height:5%;
+	display:block;
+	margin: @center;
+	background-color:@color;
+	vertical-align:center;
+	.border-radius-custom(30px,5px,0px,10px);
+	
+	
+}
+
+
+
