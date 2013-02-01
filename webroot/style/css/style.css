@@ -41,6 +41,11 @@
                 .four  {color: @lighten1;}
                 .five  {color: @lighten2;}
 */
+/*-----------opacity--------------*/
+/*
+    Exemple : 
+                .opacity(100);
+*/
 html,
 body {
   width: 100%;
@@ -48,7 +53,6 @@ body {
 }
 body {
   background-color: #e1e1e1;
-  color: #454545;
 }
 .contentWrapper {
   width: 80%;

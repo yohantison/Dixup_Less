@@ -115,3 +115,20 @@
 @lighter2: lighten(spin(@base, 10), 20%);
 @darker1: darken(spin(@base, -5), 10%);
 @darker2: darken(spin(@base, -10), 20%);
+
+/*-----------opacity--------------*/
+//opacity modification
+/*
+    Exemple : 
+                .opacity(100);
+*/
+
+.opacity(@percent:100){
+    -webkit-opacity:@percent*0.01;
+    -o-opacity:@percent*0.01;
+    -moz-opacity:@percent*0.01;
+    opacity:@percent*0.01;
+    -ms-filter:"alpha(opacity=@percent)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=@percent);
+    filter : alpha(opacity=@percent);
+}
