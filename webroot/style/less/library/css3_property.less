@@ -61,6 +61,21 @@
         box-shadow: @x @y @blur @spread rgba(@r,@v,@b,@alpha) inset;  
    
 }
+//Multiple Box Shadow
+/*
+    Exemple : 
+                @shadow:5px 5px 5px rgba(0,0,0,1),
+                        5px 5px 5px rgba(0,0,0,1) inset;
+                .mbs(@shadow);
+*/
+.mbs (@value){
+    -o-box-shadow: @value;
+    -moz-box-shadow: @value;
+    -webkit-box-shadow: @value;
+    -ms-box-shadow: @value;
+    -khtml-box-shadow: @value;
+    box-shadow: @value;
+}
 
 /*-----------Gradient--------------*/
 //Linear Gradient

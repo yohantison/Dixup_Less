@@ -16,6 +16,10 @@
     Exemple : 
                 .bs(20px,20px,6px,0,0,0,0.3);
 */
+/*
+    Exemple : 
+                .mbs(5px 5px 5px rgba(0,0,0,1),5px 5px 5px rgba(0,0,0,1) inset)
+*/
 /*-----------Gradient--------------*/
 /*
     Exemple : 
@@ -67,10 +71,10 @@ section.button {
   vertical-align: center;
   background-color: #00ffff;
   color: #99001a;
-  -o-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5) inset;
-  -moz-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5) inset;
-  -webkit-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5) inset;
-  -ms-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5) inset;
-  -khtml-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5) inset;
-  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5) inset;
+  -o-box-shadow: 5px 5px 5px #000000, 5px 5px 5px #000000 inset;
+  -moz-box-shadow: 5px 5px 5px #000000, 5px 5px 5px #000000 inset;
+  -webkit-box-shadow: 5px 5px 5px #000000, 5px 5px 5px #000000 inset;
+  -ms-box-shadow: 5px 5px 5px #000000, 5px 5px 5px #000000 inset;
+  -khtml-box-shadow: 5px 5px 5px #000000, 5px 5px 5px #000000 inset;
+  box-shadow: 5px 5px 5px #000000, 5px 5px 5px #000000 inset;
 }
